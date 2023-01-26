@@ -2,8 +2,6 @@ import mods
 import time
 import os
 
-
-
 escolha_user = 1
 
 while escolha_user != 0:
