@@ -1,10 +1,10 @@
 import pandas as pd
 
 # vai ler a tabela pelo caminho dado, atribuindo ela a uma variavel. Separando os dados em colunas pelo argumento ';'
-tabela_vendas = pd.read_csv(r'E:\Programas\Projetos Python\Pandas\Contoso - Vendas  - 2017.csv', sep=';') 
+tabela_vendas = pd.read_csv(r'E:\Programas\Projetos-Python\Pandas\Contoso - Vendas  - 2017.csv', sep=';') 
 
 # printar a tabela inteira
-## print(tabela_vendas)
+print(tabela_vendas)
 
 # printar apenas o argumento escolhido. No caso, todas as linhas da coluna 'ID Cliente'
 ## print(tabela_vendas['ID Cliente'])
@@ -29,5 +29,5 @@ tabela_vendas = pd.read_csv(r'E:\Programas\Projetos Python\Pandas\Contoso - Vend
 ## print(lista_clientes)
 
 # criar uma lista de para controle de estoque
-lista_colunas = ['ID Produto', 'Quantidade Vendida', 'Quantidade Devolvida']
-print(tabela_vendas[lista_colunas])
+## lista_colunas = ['ID Produto', 'Quantidade Vendida', 'Quantidade Devolvida']
+## print(tabela_vendas[lista_colunas])
