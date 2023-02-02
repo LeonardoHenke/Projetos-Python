@@ -28,6 +28,6 @@ print(tabela_vendas)
 ## lista_clientes = tabela_vendas['ID Cliente']
 ## print(lista_clientes)
 
-# criar uma lista de para controle de estoque
+# criar uma lista para controle de estoque
 ## lista_colunas = ['ID Produto', 'Quantidade Vendida', 'Quantidade Devolvida']
 ## print(tabela_vendas[lista_colunas])
