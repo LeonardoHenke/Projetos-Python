@@ -4,7 +4,7 @@ from time import sleep
 sleep(2)
 
 # - clicar em continuar:
-# pyautogui.click(825,834, duration=0.2)
+pyautogui.click(825, 834, duration=0.2)
 # - Primeiro jogador:
 #     - clicar em denunciar jogador
 pyautogui.click(600, 336, duration=0.8)
