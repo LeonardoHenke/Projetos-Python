@@ -1,7 +1,15 @@
 import pyautogui
+import pygetwindow as gw
 from time import sleep
 
-sleep(2)
+lol_window = gw.getWindowsWithTitle('League of Legends')[0]
+lol_window.activate()
+
+
+# - pular honras:
+pyautogui.click(961,808, duration=0.5)
+
+sleep(6)
 
 # - clicar em continuar:
 pyautogui.click(825, 834, duration=0.2)
