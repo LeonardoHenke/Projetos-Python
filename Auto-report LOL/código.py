@@ -24,7 +24,7 @@ mods.botao_continuar()
 sleep(2)
 
 for i, regiao in enumerate(cordenadas_regiao):
-    if pyautogui.locateOnScreen('nickname.png', region=(regiao), grayscale=True, confidence=0.4) == None:
+    if not pyautogui.locateOnScreen('nickname.png', region=(regiao), grayscale=True, confidence=0.4):
         pyautogui.click(cordenadas_botaoDenunc[i], duration=0.2)
         mods.denuncias_do_jogador()
 
