@@ -30,3 +30,6 @@ for i, regiao in enumerate(cordenadas_regiao):
 
 # - clicar em continuar:
 #pyautogui.click(825, 834, duration=0.2)
+
+# while not locateonscreen
+# print(pyautogui.position())
