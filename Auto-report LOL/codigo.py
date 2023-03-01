@@ -2,6 +2,11 @@ import pyautogui
 import pygetwindow as gw
 from time import sleep
 import mods
+import cv2
+
+honra = cv2.imread(r"E:\Programas\Projetos-Python\Auto-report LOL\honra.png")
+continuar1 = cv2.imread(r"E:\Programas\Projetos-Python\Auto-report LOL\continuar1.png")
+continuar2 = cv2.imread(r"E:\Programas\Projetos-Python\Auto-report LOL\continuar2.png")
 
 # a cor que iremos procurar na comparação
 pixel_amarelo = (250, 190, 10)
@@ -17,21 +22,21 @@ lol_window = gw.getWindowsWithTitle('League of Legends')[0]
 lol_window.activate()
 
 # esperando carregar a página
-while not pyautogui.locateCenterOnScreen('honra.png'):
+while not pyautogui.locateCenterOnScreen(honra):
     sleep(1.5)
 
 # pular honras:
 mods.botao_pular_honras()
 
 # esperando carregar a página
-while not pyautogui.locateCenterOnScreen('continuar1.png'):
+while not pyautogui.locateCenterOnScreen(continuar1):
     sleep(1.5)
 
 # - clicar em continuar:
 mods.botao_continuar()
 
 # esperando carregar a página
-while not pyautogui.locateCenterOnScreen('continuar2.png'):
+while not pyautogui.locateCenterOnScreen(continuar2):
     sleep(1.5)
 
 # verificar se a cor do pixel é amarela
@@ -46,4 +51,4 @@ for i, regiao in enumerate(coordenadas_pixel):
         print(f'Player{i+1} - é nóis')
 
 # - clicar em continuar:
-pyautogui.click(825, 834, duration=0.2)
+mods.botao_continuar()
