@@ -23,21 +23,24 @@ lol_window.activate()
 
 # esperando carregar a página
 while not pyautogui.locateCenterOnScreen(honra):
-    sleep(1.5)
+    sleep(1)
+    print('esperando1')
 
 # pular honras:
 mods.botao_pular_honras()
 
 # esperando carregar a página
 while not pyautogui.locateCenterOnScreen(continuar1):
-    sleep(1.5)
+    sleep(1)
+    print('esperando2')
 
 # - clicar em continuar:
 mods.botao_continuar()
 
 # esperando carregar a página
 while not pyautogui.locateCenterOnScreen(continuar2):
-    sleep(1.5)
+    sleep(1)
+    print('esperando3')
 
 # verificar se a cor do pixel é amarela
 for i, regiao in enumerate(coordenadas_pixel):
