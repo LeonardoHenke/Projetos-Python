@@ -1,8 +1,8 @@
+from time import sleep
+import cv2
 import pyautogui
 import pygetwindow as gw
-from time import sleep
 import mods
-import cv2
 
 honra = cv2.imread(r"E:\Programas\Projetos-Python\Auto-report LOL\honra.png")
 continuar1 = cv2.imread(r"E:\Programas\Projetos-Python\Auto-report LOL\continuar1.png")
