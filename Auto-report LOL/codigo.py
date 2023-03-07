@@ -1,12 +1,12 @@
 from time import sleep
-import cv2
 import pyautogui
 import pygetwindow as gw
 import mods
 
-honra = cv2.imread(r"E:\Programas\Projetos-Python\Auto-report LOL\honra.png")
-continuar1 = cv2.imread(r"E:\Programas\Projetos-Python\Auto-report LOL\continuar1.png")
-continuar2 = cv2.imread(r"E:\Programas\Projetos-Python\Auto-report LOL\continuar2.png")
+# dando entrada nas imagens
+honra = r"E:\Programas\Projetos-Python\Auto-report LOL\honra.png"
+continuar1 = r"E:\Programas\Projetos-Python\Auto-report LOL\continuar1.png"
+continuar2 = r"E:\Programas\Projetos-Python\Auto-report LOL\continuar2.png"
 
 # a cor que iremos procurar na comparação
 pixel_amarelo = (250, 190, 10)
@@ -41,6 +41,7 @@ mods.botao_continuar()
 while not pyautogui.locateCenterOnScreen(continuar2):
     sleep(1)
     print('esperando3')
+sleep(1)
 
 # verificar se a cor do pixel é amarela
 for i, regiao in enumerate(coordenadas_pixel):
